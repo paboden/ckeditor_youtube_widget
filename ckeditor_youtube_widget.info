@@ -1,0 +1,7 @@
+name = Ckeditor Youtube Widget
+description = Add a configurable youtube widget to the ckeditor profiles
+core = 7.x
+version = 1.0
+package = User interface
+
+dependencies[] = ckeditor

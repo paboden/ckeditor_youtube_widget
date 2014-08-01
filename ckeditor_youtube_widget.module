@@ -1,0 +1,19 @@
+<?php
+/**
+ * Implements hook_ckeditor_plugin().
+ *
+ * @return type
+ */
+function ckeditor_youtube_widget_ckeditor_plugin() {
+
+  $plugins['youtube_widget'] = array(
+    'name' => 'youtube_widget',
+    'desc' => t('Add a youtube widget.'),
+    'path' => drupal_get_path('module', 'ckeditor_youtube_widget') . '/plugins/youtube_widget/',
+    'buttons' => array(
+      'Youtube_widget' => array('label' => 'Youtube widget', 'icon' => 'icons/youtube_widget.png'),
+    )
+  );
+
+  return $plugins;
+}
